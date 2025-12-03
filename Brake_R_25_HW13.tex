@@ -1,0 +1,110 @@
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\documentclass[12pt]{article}
+\usepackage{fancyhdr}
+\usepackage{pslatex}
+\usepackage{epsfig}
+\usepackage{times}
+\usepackage{amsmath}
+\usepackage{mathrsfs}
+\usepackage[dvipsnames]{xcolor}
+\usepackage[hidelinks]{hyperref}%renewcommand{\topfraction}{1.0}
+\renewcommand{\topfraction}{1.0}
+\renewcommand{\bottomfraction}{1.0}
+\renewcommand{\textfraction}{0.0}
+\setlength {\textwidth}{6.6in}
+\hoffset=-1.0in
+\oddsidemargin=1.00in
+\marginparsep=0.0in
+\marginparwidth=0.0in                                                                               
+\setlength {\textheight}{9.0in}
+\voffset=-1.00in
+\topmargin=1.0in
+\headheight=0.0in
+\headsep=0.00in
+\footskip=0.50in                                         
+\setcounter{page}{3}
+\begin{document}
+\def\pos{\medskip\quad}
+\def\subpos{\smallskip \qquad}
+\newfont{\nice}{cmr12 scaled 1250}
+\newfont{\name}{cmr12 scaled 1080}
+\newfont{\swell}{cmbx12 scaled 800}
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%     DO NOT CHANGE ANYTHING ABOVE THIS LINE
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%     DO NOT CHANGE ANYTHING ABOVE THIS LINE
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%     DO NOT CHANGE ANYTHING ABOVE THIS LINE
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+% Title
+\begin{center}
+{\large
+PHYS  20323/60323: Fall 2025 - LaTeX Example
+}\\
+\end{center}
+
+% line 1
+\noindent {1. At time t = 0 a particle is represented by the wave function} 
+% placeholder for the fancy bracket stuff
+\begin{equation}
+\Psi (x) = \begin{cases}
+\vspace{12pt}
+A \frac{x}{a}, &  0 < x < a \\
+\vspace{12pt}
+A \frac{(b-x)}{(b-a)},& a < x < b \\
+0, & \text{otherwise}
+\end{cases}
+\end{equation} 
+
+% where A, a, and b are constants
+where \textit{A, a,} and \textit{b} are constants. \\
+
+(a)  (3.3 points)  Normalize $\Psi$ (i.e., find \textit{A} in terms of \textit{a} and \textit{b}).\\
+
+(b) (3.3 points) Where is the particle likely to be found at \textit{t} = 0? \\
+
+(c) (3.4 points) What is the expectation value of \textit{x}? \\
+
+% number 2
+\noindent {2. \bf The following questions refer to stars in the Table below.} \\
+\textit{Note: there may be multiple answers.}
+
+%Come back and fix stuff later!!!!!!!!!!!!!!!!!!!!!!
+\begin{center}
+
+\begin{tabular} {|c|c|c|c|c|c|c|}
+\hline Name & Mass & Luminosity & Lifetime & Temperature & Radius & Variable? \\
+\hline $\delta$ Scu. & 2.0 $\textit{M}_{\bigodot}$ &  & 5.0 $ \times 10^8$ years &  & 2.0 $\textit{R}_{\bigodot}$ & Y \\
+\hline $\gamma$ Del. & 0.7 $\textit{M}_{\bigodot}$ &  & 4.5 $\times 10^{10}$ years & 5000 K &  & N \\
+\hline $\beta$ Cyg. & 1.3 $\textit{M}_{\bigodot}$ & 3.5 $\textit{L}_{\bigodot}$ &  &  &  & Y \\
+\hline $\eta$ Car. & 60. $\textit{M}_{\bigodot}$ & $10^6$ $\textit{L}_{\bigodot}$ & 8 $\times 10^5$ years & & & Y \\
+\hline $\epsilon$ Eri. & 6.0 $\textit{M}_{\bigodot}$ & $10^3$ $\textit{L}_{\bigodot}$ & & 20,000 K & & N \\
+\hline $\alpha$ Cen. & 1.0 $\textit{M}_{\bigodot}$ & & & 6000 K & 1.0 $\textit{R}_{\bigodot}$ & N \\
+\hline
+
+\end{tabular}
+
+\end{center}
+
+(a) (4 points) Which of these stars will produce a planetary nebula.\\
+
+(b) (4 points) Elements heavier than \texttt{Carbon} will be produced in which stars.\\
+
+% numba threeeee
+\noindent{3. An electron is found to be in the spin state (in the \textit{z}-basis): $\chi = A(\substack{3i\\4})$}\\
+
+(a) (5 points) Determine the possible values of \textit{A} such that the state is normalized.\\
+
+(b) (5 points) Find the expectation values of the operators {\color{red}$S_x$}, {\color{purple}$S_y$}, {\color{orange}$S_z$} and $\textit{S}^{\xrightarrow{}2}$\\
+
+The matrix representations in the \textit{z}-basis for the components of electron spin operators are \\ $\phantom{asl}$ given by: \\
+
+%the colorful stuff at the bottom
+
+{\color{red} $\mathbf{S_x} = \frac{h}{2}(\substack{0\\1} \hspace{12pt} \substack{1\\0})$ ;} \hspace{35pt} {\color{purple} $\mathbf{S_y} = \frac{h}{2}(\substack{0\\i} \hspace{12pt} \substack{-i\\0})$ ;} \hspace{35pt}  {\color{orange}$\mathbf{S_z} = \frac{h}{2} (\substack{1\\0} \hspace{12pt} \substack {0\\-1})$}
+
+
+% This goes at the end I think
+\end{document}
